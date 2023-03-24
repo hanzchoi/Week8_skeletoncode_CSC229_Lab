@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-
 /**
  *
  * @author Hanbi Hanz Choi
  */
-public class BinarySearch {
 
+public class BinarySearch {
     public static int runBinarySearchIteratively(
             int[] sortedArray, int key, int low, int high) {
         int index = Integer.MAX_VALUE;
@@ -29,5 +23,15 @@ public class BinarySearch {
     }
     //ToDo 2: Call the above method and test the algorithm
     // provide time and space analysis
+    public static void main(String args[]){
+        int[] arr = {1, 5, 7, 8, 13};
+        int key = 8;
+        int low = 0;
+        int high = arr.length - 1;
+
+        int index = BinarySearch.runBinarySearchIteratively(arr, key, low, high);
+
+        System.out.println(index);
+    }
 
 }
